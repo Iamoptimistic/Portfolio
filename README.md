@@ -55,7 +55,7 @@ I am a Data Scientist and Biomedical Research Enthusiast with a strong interest 
 
 Feel free to reach out to me via:
 - **Email:** mobolajiayoola3@gmail.com
-- **LinkedIn:** linkedin.com/in/mobolajiabdulateef 
+- **LinkedIn:** [here] (linkedin.com/in/mobolajiabdulateef) 
 - **GitHub:** 
 
 ---
