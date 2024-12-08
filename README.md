@@ -1,6 +1,19 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio! 👋 I'm **Mobolaji Abdulateef**, a passionate biomedical researcher with a heart for data science. I am an expert in Data Analysis, visualization, and predictive modelling using **Python** and **PowerBI** This portfolio showcases projects that demonstrate my skills, creativity, and ability to turn data into actionable insights and predictive models.
+Welcome to my Data Science Portfolio! 👋 I'm **Mobolaji Abdulateef**, I am an expert in Data Analysis, visualization, and predictive modelling using **Python** and **PowerBI** This portfolio showcases projects demonstrating my skills, creativity, and ability to turn data into actionable insights and predictive models.
+
+---
+## 📜 About Me
+
+I am a Data Scientist and Biomedical Research Enthusiast with a strong interest in solving real-world problems in health care through data, sustainable development, and advanced analytics. I aim to leverage data science to drive innovation and make informed decisions in health care.
+
+---
+## 🛠️ Skills
+
+- **Programming Languages:** Python
+- **Machine Learning:** Scikit-learn, TensorFlow, PyTorch
+- **Data Visualization:** Matplotlib and Seaborn
+- **Other Tools:** Git, Jupyter Notebooks
 
 ---
 
@@ -8,10 +21,10 @@ Welcome to my Data Science Portfolio! 👋 I'm **Mobolaji Abdulateef**, a passio
 
 ### 1. ABALONE AGE PREDICTION
 - **Description:** 
-Abalone age prediction involves estimating the age of abalones, marine mollusks, using measurable physical features instead of traditional ring counting, which is labor-intensive. Key features include shell dimensions (length, diameter, height), weight metrics (whole, shucked, viscera, and shell weight), and sex (male, female, or infant). Machine learning models, trained on datasets like the UCI Abalone Dataset, use these features to predict age accurately. This method supports sustainable fisheries by enabling efficient population management and conservation efforts. By streamlining age estimation, it facilitates better resource management, promoting ecological balance and aiding in the sustainable harvesting of abalone populations.
+Abalone age prediction involves estimating the age of abalones, and marine molluscs, using measurable physical features instead of traditional ring counting, which is labour-intensive. Key features include shell dimensions (length, diameter, height), weight metrics (whole, shucked, viscera, and shell weight), and sex (male, female, or infant). Machine learning models, trained on datasets like the UCI Abalone Dataset, use these features to predict age accurately. This method supports sustainable fisheries by enabling efficient population management and conservation efforts. Streamlining age estimation facilitates better resource management, promoting ecological balance and aiding in the sustainable harvesting of abalone populations.
 - **Tools & Technologies:** Python, Pandas, Scikit-learn, Matplotlib
 - **Key Features:**
-- ![Portfolio Preview](./images/portfolio-preview.png)
+-![Portfolio Preview](Figure_1.png)
 - **Repository:** [Link to project repo or folder if hosted here]
 
 ---
@@ -36,27 +49,13 @@ Abalone age prediction involves estimating the age of abalones, marine mollusks,
 
 ---
 
-## 🛠️ Skills
-
-- **Programming Languages:** Python
-- **Machine Learning:** Scikit-learn, TensorFlow, PyTorch
-- **Data Visualization:** Matplotlib and Seaborn
-- **Other Tools:** Git, Jupyter Notebooks
-
----
-
-## 📜 About Me
-
-I am a Data Scientist and Biomedical Research Enthusiast with a strong interest in solving real-world problems in health care through data, sustainable development, and advanced analytics. My goal is to leverage data science to drive innovation and make informed decisions in health care.
-
----
-
 ## 📬 Contact Me
 
 Feel free to reach out to me via:
 - **Email:** mobolajiayoola3@gmail.com
-- **LinkedIn:** [here](linkedin.com/in/mobolajiabdulateef) 
-- **GitHub:** 
+- **LinkedIn:** [Check my LinkedIn activities](https://www.linkedin.com/in/mobolajiabdulateef/) 
+- **GitHub:** [View](https://github.com/Iamoptimistic)
+- **Curriculum Vitae:** [Open](https://github.com/Iamoptimistic)
 
 ---
 
