@@ -6,12 +6,12 @@ Welcome to my Data Science Portfolio! 👋 I'm **Mobolaji Abdulateef**, a passio
 
 ## 📊 Projects
 
-### 1. [Project Title 1]
-- **Description:** [Brief description of the project, e.g., Analyzed customer data to predict churn using machine learning techniques.]
-- **Tools & Technologies:** [List tools, e.g., Python, Pandas, Scikit-learn, Matplotlib]
+### 1. ABALONE AGE PREDICTION
+- **Description:** 
+Abalone age prediction involves estimating the age of abalones, marine mollusks, using measurable physical features instead of traditional ring counting, which is labor-intensive. Key features include shell dimensions (length, diameter, height), weight metrics (whole, shucked, viscera, and shell weight), and sex (male, female, or infant). Machine learning models, trained on datasets like the UCI Abalone Dataset, use these features to predict age accurately. This method supports sustainable fisheries by enabling efficient population management and conservation efforts. By streamlining age estimation, it facilitates better resource management, promoting ecological balance and aiding in the sustainable harvesting of abalone populations.
+- **Tools & Technologies:** Python, Pandas, Scikit-learn, Matplotlib
 - **Key Features:**
-  - [Feature 1]
-  - [Feature 2]
+- ![Portfolio Preview](./images/portfolio-preview.png)
 - **Repository:** [Link to project repo or folder if hosted here]
 
 ---
@@ -55,7 +55,7 @@ I am a Data Scientist and Biomedical Research Enthusiast with a strong interest 
 
 Feel free to reach out to me via:
 - **Email:** mobolajiayoola3@gmail.com
-- **LinkedIn:** [here] (linkedin.com/in/mobolajiabdulateef) 
+- **LinkedIn:** [here](linkedin.com/in/mobolajiabdulateef) 
 - **GitHub:** 
 
 ---
