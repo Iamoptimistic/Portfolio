@@ -39,23 +39,13 @@ Abalone age prediction involves estimating the age of abalones, and marine mollu
 
 ---
 
-### 3. [Project Title 3]
-- **Description:** [Brief description, e.g., Developed a dashboard for visualizing global COVID-19 trends.]
-- **Tools & Technologies:** [List tools, e.g., Tableau, SQL]
-- **Key Features:**
-  - [Feature 1]
-  - [Feature 2]
-- **Repository:** [Link to project repo or folder]
-
----
-
 ## 📬 Contact Me
 
 Feel free to reach out to me via:
 - **Email:** mobolajiayoola3@gmail.com
 - **LinkedIn:** [Check my LinkedIn activities](https://www.linkedin.com/in/mobolajiabdulateef/) 
 - **GitHub:** [View](https://github.com/Iamoptimistic)
-- **Curriculum Vitae:** [Open](https://github.com/Iamoptimistic)
+- **Curriculum Vitae:** [Open](CURRICULUM VITAE- ABDULATEEF AYOOLA MOBOLAJI.pdf)
 
 ---
 
