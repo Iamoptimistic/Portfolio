@@ -23,20 +23,22 @@ I am a Data Scientist and Biomedical Research Enthusiast with a strong interest 
 - **Description:** 
 Abalone age prediction involves estimating the age of abalones, and marine molluscs, using measurable physical features instead of traditional ring counting, which is labour-intensive. Key features include shell dimensions (length, diameter, height), weight metrics (whole, shucked, viscera, and shell weight), and sex (male, female, or infant). Machine learning models, trained on datasets like the UCI Abalone Dataset, use these features to predict age accurately. This method supports sustainable fisheries by enabling efficient population management and conservation efforts. Streamlining age estimation facilitates better resource management, promoting ecological balance and aiding in the sustainable harvesting of abalone populations.
 - **Tools & Technologies:** Python, Pandas, Scikit-learn, Matplotlib
-- **Key Features:**
 -![Portfolio Preview](Figure_1.png)
 - **Repository:** [Link to project repo or folder if hosted here]
 
 ---
 
-### 2. [Project Title 2]
-- **Description:** [Brief description, e.g., Built a recommendation engine to suggest movies based on user preferences.]
-- **Tools & Technologies:** [List tools, e.g., R, ggplot2, Shiny]
-- **Key Features:**
-  - [Feature 1]
-  - [Feature 2]
-- **Repository:** [Link to project repo or folder]
+### 2. Data Cleaning Task with Python
+- **Description:** In this project, I performed a data cleaning task on a dataset containing information about movies watched over a specific period. The dataset, sourced from Kaggle, includes attributes such as movie titles, genres, ratings, watch duration, and timestamps.
 
+The primary goal of this task was to ensure the dataset was clean, consistent, and ready for analysis by addressing missing values, duplicate entries, inconsistent formatting, and incorrect data types. Using Python and its powerful libraries such as Pandas and NumPy, I streamlined the cleaning process and prepared the data for further analysis.
+
+This project showcases the importance of data cleaning as a foundational step in data science, ensuring accuracy and reliability in downstream insights and visualizations.
+- **Tools & Technologies:** Python, Matplotlib, Panda and Seaborn
+![Portfolio Preview](Figure_1.png)
+  
+- **Repository:** [Link to the Jupyter Notebook](Data Cleaning Task_ Movies.ipynb)
+- **Check the data** [Here]()
 ---
 
 ## 📬 Contact Me
