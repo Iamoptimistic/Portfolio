@@ -45,7 +45,7 @@ Abalone age prediction involves estimating the age of abalones, and marine mollu
 - **Description:** The data visualization was performed using Power BI, a dynamic tool for creating interactive and comprehensive representations of the survey results. Key metrics such as customer engagement, platform preferences, content effectiveness, and purchasing behaviours were analyzed to understand how Amazon's social media presence influences Nigerian customers.
 The insights derived from the visualization offer a window into customer preferences, highlighting trends such as the popularity of specific platforms like Instagram and Twitter, the role of promotional campaigns, and the importance of localized content in driving engagement. This study provides valuable information for refining Amazon’s marketing strategies, optimizing customer experiences, and enhancing its reach in the Nigerian market.
 - 
-- **Tools & Technologies:** PowerBI Visualization
+- **Tools & Technologies:** PowerBI, Visualization
 
 ![Visualization](Amazon.png)
   
