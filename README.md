@@ -47,7 +47,7 @@ The insights derived from the visualization offer a window into customer prefere
 - 
 - **Tools & Technologies:** PowerBI Visualization
 
-![Visualization](PowerBI.png)
+![Visualization](Amazon.png)
   
 - **Repository:** [Download Jupyter Notebook](Social Media Marketing Survey.pbix)
 - **Download Data** [Here](Social Media Marketing Survey.pbix)
