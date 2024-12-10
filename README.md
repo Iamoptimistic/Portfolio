@@ -49,8 +49,7 @@ The insights derived from the visualization offer a window into customer prefere
 
 ![Visualization](Amazon.png)
   
-- **Repository:** [Download Jupyter Notebook](Social Media Marketing Survey.pbix)
-- **Download Data** [Here](Social Media Marketing Survey.pbix)
+**Repository:** [Download Jupyter Notebook](Social Media Marketing Survey.pbix)
 ---
 
 ## 📬 Contact Me
