@@ -19,6 +19,29 @@ I am a Data Scientist and Biomedical Research Enthusiast with a strong interest 
 
 ## 📊 Projects
 
+### 1. EMPLOYEE PROMOTION PREDICTION
+- **Description:** 
+In response to growing concerns and complaints from employees regarding the fairness and transparency of promotion decisions within the organization, this project aims to revolutionize the employee promotion process through automation powered by machine learning.
+
+The objective of the project is to develop an intelligent system that analyzes key performance indicators, employee history, and other relevant human resource metrics to objectively predict whether an employee qualifies for a promotion. By leveraging historical data and predictive modeling, the system will provide reliable, data-driven recommendations that support HR decisions.
+
+Benefits:
+
+Increased Transparency: Promotion decisions are often perceived as biased or inconsistent. This system helps eliminate subjective judgment by providing evidence-based recommendations.
+
+Enhanced Efficiency: Automating the promotion recommendation process reduces administrative overhead, allowing the HR team to focus on more strategic initiatives.
+
+Fairness and Equity: Employees are evaluated on the same set of criteria, promoting a merit-based culture and improving employee satisfaction.
+
+Scalability: As the organization grows, the system can easily be scaled to evaluate larger datasets without compromising performance or accuracy. 
+.
+
+- **Tools & Technologies:** Python, Pandas, Scikit-learn, Matplotlib
+
+- 
+-![Portfolio Preview](Figure_1.png)
+
+---
 ### 1. ABALONE AGE PREDICTION
 - **Description:** 
 Abalone age prediction involves estimating the age of abalones, and marine molluscs, using measurable physical features instead of traditional ring counting, which is labour-intensive. Key features include shell dimensions (length, diameter, height), weight metrics (whole, shucked, viscera, and shell weight), and sex (male, female, or infant). Machine learning models, trained on datasets like the UCI Abalone Dataset, use these features to predict age accurately. This method supports sustainable fisheries by enabling efficient population management and conservation efforts. Streamlining age estimation facilitates better resource management, promoting ecological balance and aiding in the sustainable harvesting of abalone populations.
