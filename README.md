@@ -44,7 +44,6 @@
       <ul class="flex space-x-6 font-medium">
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-        <li><a href="#research" class="nav-link">Research</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#artwork" class="nav-link">My Artwork</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -57,8 +56,8 @@
     <div class="container mx-auto">
       <h2 class="text-5xl font-extrabold mb-6 text-blue-600">Welcome to My Portfolio</h2>
       <p class="text-lg max-w-2xl mx-auto mb-8">
-        I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. 
-        I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.
+        I am <strong>Mobolaji Abdulateef</strong>, a veterinarian and certified Data scientist with keen interest in Biomedical Research. 
+      My research focus include neurobiology, bioimaging and environmental toxicology.
       </p>
       <a href="#portfolio" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 font-semibold">
         Explore My Work
@@ -91,22 +90,11 @@
     </div>
   </section>
 
-  <!-- Research -->
-  <section id="research">
-    <div class="container mx-auto text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4 text-blue-600">📑 Research Interests</h2>
-      <p class="max-w-3xl mx-auto">
-        My research lies at the intersection of Neurobiology and Bioimaging. 
-        I use advanced analytics to study brain health, sleep patterns, and Bioimaging.
-      </p>
-    </div>
-  </section>
-
   <!-- Gallery -->
   <section id="gallery">
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-blue-600">🖼️ Gallery</h2>
-      <p class="max-w-2xl mx-auto">Browse through visuals from my projects and research.</p>
+      <p class="max-w-2xl mx-auto">Browse through visuals from my projects, research and conferences.</p>
     </div>
     <div class="scroll-wrapper container mx-auto">
       <button class="scroll-btn left-btn" onclick="scrollContent('galleryContainer', -300)">◀</button>
@@ -120,12 +108,12 @@
           <p>SAVAN Conference Day 2</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan2.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 2" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 2</p>
+          <img src="Savan3.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 2" onclick="openLightbox(this)">
+          <p>SAVAN Conference with BlueBlood Veterinary Hospital Staff</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan2.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 2" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 2</p>
+          <img src="Alumni1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 2" onclick="openLightbox(this)">
+          <p>Presented my research work at the maiden edition of the Alumni meeting</p>
         </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('galleryContainer', 300)">▶</button>
@@ -143,23 +131,23 @@
       <div id="artworkContainer" class="scroll-container">
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
           <img src="Picture1.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
-          <p>Transverse section of Cerebellum (X40, H&E)</p>
+          <p>Transverse section of Cerebellum of African Side-neck Turtle (Pelusios castaneus) (X40, H&E)</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
-          <p>Transverse section of Cerebellum (X40, H&E)</p>
+          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (Pelusios castaneus) (X100, H&E)" onclick="openLightbox(this)">
+          <p>ransverse section of Cerebellum (Pelusios castaneus) (X100, H&E)</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture3.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
-          <p>Transverse section of Cerebellum (X40, H&E)</p>
+          <img src="Picture3.jpg" class="rounded-lg mb-2" alt="Cerebellum (X400, H&E)" onclick="openLightbox(this)">
+          <p>Transverse section of Cerebellum (Pelusious castaneus) (X400, H&E)</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
-          <p>Transverse section of Cerebellum (X40, H&E)</p>
+          <img src="Ulcer1.jpg" class="rounded-lg mb-2" alt="Transverse section of Stomach (X40, H&E)" onclick="openLightbox(this)">
+          <p>Transverse section of Stomach showing sloughing-off of the intestinal lining (X100, H&E)</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
-          <p>Transverse section of Cerebellum (X40, H&E)</p>
+          <img src="Cardiac1.jpg" class="rounded-lg mb-2" alt=" longitudinal Section of Cardiac muscle, note the crossing intercalated disc, nucleus at the margin and branching of the muscle fibers (X100, H&E)" onclick="openLightbox(this)">
+          <p>longitudinal Section of Cardiac muscle, note the crossing intercalated disc, nucleus at the margin and branching of the muscle fibers (X100, H&E)</p>
         </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('artworkContainer', 300)">▶</button>
