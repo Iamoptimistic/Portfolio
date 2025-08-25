@@ -19,9 +19,60 @@
     .card {
       background: rgba(59, 91, 42, 0.8);
       color: #f9fafb;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 255, 100, 0.6);
+    }
+    a, button, img {
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover, button:hover {
+      color: #22c55e;
+      text-shadow: 0 0 10px #22c55e;
+    }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 255, 100, 0.6);
     }
     header, footer {
       background: #000000;
+    }
+    /* Gallery */
+    .gallery-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-container {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    .gallery-container::-webkit-scrollbar {
+      display: none;
+    }
+    .gallery-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #22c55e;
+      padding: 0.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .gallery-btn:hover {
+      background: rgba(34, 197, 94, 0.8);
+      color: white;
+    }
+    .left-btn {
+      left: 10px;
+    }
+    .right-btn {
+      right: 10px;
     }
   </style>
 </head>
@@ -31,12 +82,12 @@
     <nav class="container mx-auto flex justify-between items-center p-4 text-gray-200">
       <h1 class="text-xl font-bold text-green-400">Mobolaji Abdulateef</h1>
       <ul class="flex space-x-6 font-medium">
-        <li><a href="#home" class="hover:text-green-400">Home</a></li>
-        <li><a href="#portfolio" class="hover:text-green-400">Portfolio</a></li>
-        <li><a href="#research" class="hover:text-green-400">Research</a></li>
-        <li><a href="#gallery" class="hover:text-green-400">Gallery</a></li>
-        <li><a href="#cv" class="hover:text-green-400">CV</a></li>
-        <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -57,25 +108,25 @@
       <p class="max-w-2xl mx-auto">A selection of my work demonstrating expertise in machine learning, predictive analytics, and data visualization.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-8 container mx-auto">
-      <div class="card shadow rounded-xl p-6 hover:shadow-lg transition">
+      <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
         <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-        <img src="AUC.png" alt="Project" class="rounded-lg shadow">
+        <img src="AUC.png" alt="Project">
       </div>
-      <div class="card shadow rounded-xl p-6 hover:shadow-lg transition">
+      <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Abalone Age Prediction</h3>
         <p class="mb-4">Predicting the age of abalones using measurable physical features and machine learning models.</p>
-        <img src="Figure_1.png" alt="Project" class="rounded-lg shadow">
+        <img src="Figure_1.png" alt="Project">
       </div>
-      <div class="card shadow rounded-xl p-6 hover:shadow-lg transition">
+      <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Data Cleaning Task with Python</h3>
         <p class="mb-4">Prepared and cleaned a Kaggle movies dataset, resolving missing values, duplicates, and inconsistencies.</p>
-        <img src="Print.png" alt="Project" class="rounded-lg shadow">
+        <img src="Print.png" alt="Project">
       </div>
-      <div class="card shadow rounded-xl p-6 hover:shadow-lg transition">
+      <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Amazon Social Media Marketing</h3>
         <p class="mb-4">Power BI visualization of Amazon’s marketing influence in Nigeria, analyzing customer engagement trends.</p>
-        <img src="Amazon.png" alt="Project" class="rounded-lg shadow">
+        <img src="Amazon.png" alt="Project">
       </div>
     </div>
   </section>
@@ -102,12 +153,17 @@
   <section id="gallery" class="py-20">
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-green-400">🖼️ Gallery</h2>
-      <p class="max-w-2xl mx-auto">A collection of visuals from my data projects and research.</p>
+      <p class="max-w-2xl mx-auto">Browse through visuals from my projects and research using the arrows.</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-6 container mx-auto">
-      <img src="AUC.png" class="rounded-lg shadow hover:scale-105 transition" alt="Gallery Image 1">
-      <img src="Figure_1.png" class="rounded-lg shadow hover:scale-105 transition" alt="Gallery Image 2">
-      <img src="Amazon.png" class="rounded-lg shadow hover:scale-105 transition" alt="Gallery Image 3">
+    <div class="gallery-wrapper container mx-auto">
+      <button class="gallery-btn left-btn" onclick="scrollGallery(-300)">◀</button>
+      <div id="galleryContainer" class="gallery-container">
+        <img src="AUC.png" class="rounded-lg shadow w-80" alt="Gallery Image 1">
+        <img src="Figure_1.png" class="rounded-lg shadow w-80" alt="Gallery Image 2">
+        <img src="Amazon.png" class="rounded-lg shadow w-80" alt="Gallery Image 3">
+        <img src="Print.png" class="rounded-lg shadow w-80" alt="Gallery Image 4">
+      </div>
+      <button class="gallery-btn right-btn" onclick="scrollGallery(300)">▶</button>
     </div>
   </section>
 
@@ -126,9 +182,9 @@
       <h2 class="text-4xl font-bold mb-6 text-green-400">📬 Contact Me</h2>
       <p class="mb-6">Let’s connect! Reach out for collaborations, opportunities, or just to say hi.</p>
       <div class="space-y-2">
-        <p>Email: <a href="mailto:mobolajiayoola3@gmail.com" class="text-green-400">mobolajiayoola3@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/" class="text-green-400">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/Iamoptimistic" class="text-green-400">GitHub</a></p>
+        <p>Email: <a href="mailto:mobolajiayoola3@gmail.com">mobolajiayoola3@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Iamoptimistic">GitHub</a></p>
       </div>
     </div>
   </section>
@@ -137,5 +193,14 @@
   <footer class="py-6 text-center text-gray-400">
     <p>✨ Built by <strong class="text-green-400">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>
   </footer>
+
+  <script>
+    function scrollGallery(amount) {
+      document.getElementById('galleryContainer').scrollBy({
+        left: amount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>
