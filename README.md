@@ -27,98 +27,100 @@
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="pt-28 pb-16 container mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-4">Welcome to My Data Science Portfolio 👋</h2>
-    <p class="text-lg max-w-2xl mx-auto mb-6">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast with expertise in <strong>Data Analysis, Visualization, and Predictive Modelling</strong>. My passion is using data to solve real-world challenges in health care, sustainability, and technology.</p>
-    <p class="max-w-2xl mx-auto">Here you’ll find my projects, research interests, gallery of work, and professional details. Explore each section using the menu above.</p>
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-5xl font-extrabold mb-6">Welcome to My Portfolio</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.</p>
+      <a href="#portfolio" class="bg-white text-blue-700 px-6 py-3 rounded-lg shadow hover:bg-gray-100 font-semibold">Explore My Work</a>
+    </div>
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 bg-gray-100">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">📊 Portfolio Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Project 1 -->
-        <div class="bg-white shadow rounded-xl p-6">
-          <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
-          <p class="mb-4">A machine learning system that predicts employee promotions using HR metrics to improve fairness, transparency, and efficiency in promotion decisions.</p>
-          <p class="text-sm text-gray-600 mb-2">Tools: Python, Pandas, Scikit-learn, Matplotlib</p>
-          <img src="AUC.png" alt="Model" class="rounded-lg shadow">
-        </div>
-        <!-- Project 2 -->
-        <div class="bg-white shadow rounded-xl p-6">
-          <h3 class="text-xl font-semibold mb-2">Abalone Age Prediction</h3>
-          <p class="mb-4">Predicting the age of abalones using physical features and ML models to support sustainable fisheries and conservation efforts.</p>
-          <p class="text-sm text-gray-600 mb-2">Tools: Python, Scikit-learn, Matplotlib</p>
-          <img src="Figure_1.png" alt="Abalone Visualization" class="rounded-lg shadow">
-        </div>
-        <!-- Project 3 -->
-        <div class="bg-white shadow rounded-xl p-6">
-          <h3 class="text-xl font-semibold mb-2">Data Cleaning Task with Python</h3>
-          <p class="mb-4">Cleaned and prepared a Kaggle movies dataset, addressing missing values, duplicates, and formatting issues to ensure analysis accuracy.</p>
-          <p class="text-sm text-gray-600 mb-2">Tools: Python, Pandas, Seaborn</p>
-          <img src="Print.png" alt="Data Cleaning" class="rounded-lg shadow">
-        </div>
-        <!-- Project 4 -->
-        <div class="bg-white shadow rounded-xl p-6">
-          <h3 class="text-xl font-semibold mb-2">Amazon Social Media Marketing in Nigeria</h3>
-          <p class="mb-4">Power BI visualization analyzing Amazon’s social media influence in Nigeria through customer engagement and purchasing trends.</p>
-          <p class="text-sm text-gray-600 mb-2">Tools: PowerBI</p>
-          <img src="Amazon.png" alt="Amazon Visualization" class="rounded-lg shadow">
-        </div>
+  <section id="portfolio" class="py-20">
+    <div class="container mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">📊 Portfolio Projects</h2>
+      <p class="max-w-2xl mx-auto">A selection of my work demonstrating expertise in machine learning, predictive analytics, and data visualization.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 container mx-auto">
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
+        <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
+        <img src="AUC.png" alt="Project" class="rounded-lg shadow">
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Abalone Age Prediction</h3>
+        <p class="mb-4">Predicting the age of abalones using measurable physical features and machine learning models.</p>
+        <img src="Figure_1.png" alt="Project" class="rounded-lg shadow">
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Data Cleaning Task with Python</h3>
+        <p class="mb-4">Prepared and cleaned a Kaggle movies dataset, resolving missing values, duplicates, and inconsistencies.</p>
+        <img src="Print.png" alt="Project" class="rounded-lg shadow">
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Amazon Social Media Marketing</h3>
+        <p class="mb-4">Power BI visualization of Amazon’s marketing influence in Nigeria, analyzing customer engagement trends.</p>
+        <img src="Amazon.png" alt="Project" class="rounded-lg shadow">
       </div>
     </div>
   </section>
 
   <!-- Research Section -->
-  <section id="research" class="py-16 container mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">📑 Research Interests</h2>
-    <div class="grid md:grid-cols-2 gap-8">
+  <section id="research" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">📑 Research Interests</h2>
+      <p class="max-w-3xl mx-auto">My research lies at the intersection of healthcare, sustainable development, and computational neuroscience. I use advanced analytics to study antimicrobial resistance, mental health, sleep patterns, and diagnostic imaging.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 container mx-auto">
       <div class="bg-white p-6 shadow rounded-xl">
         <h3 class="text-xl font-semibold mb-2">Biomedical Research</h3>
-        <p>I study computational neuroscience, sleep patterns, and mental health, applying machine learning methods to healthcare data for better insights and interventions.</p>
+        <p>Applying machine learning to healthcare datasets for better decision-making, diagnostics, and patient outcomes.</p>
       </div>
       <div class="bg-white p-6 shadow rounded-xl">
-        <h3 class="text-xl font-semibold mb-2">Sustainable Development & Health</h3>
-        <p>Exploring how data-driven solutions can promote the Sustainable Development Goals (SDGs), particularly in antimicrobial resistance, public health, and diagnostics.</p>
+        <h3 class="text-xl font-semibold mb-2">Sustainable Development</h3>
+        <p>Exploring data-driven policies for antimicrobial resistance, public health, and sustainable healthcare systems.</p>
       </div>
     </div>
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="py-16 bg-gray-100">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">🖼️ Gallery</h2>
-      <p class="text-center mb-6">Here are some snapshots from my projects, visualizations, and research outputs.</p>
-      <div class="grid md:grid-cols-3 gap-6">
-        <img src="AUC.png" class="rounded-lg shadow" alt="Gallery Image 1">
-        <img src="Figure_1.png" class="rounded-lg shadow" alt="Gallery Image 2">
-        <img src="Amazon.png" class="rounded-lg shadow" alt="Gallery Image 3">
-      </div>
+  <section id="gallery" class="py-20">
+    <div class="container mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">🖼️ Gallery</h2>
+      <p class="max-w-2xl mx-auto">A collection of visuals from my data projects and research.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 container mx-auto">
+      <img src="AUC.png" class="rounded-lg shadow hover:scale-105 transition" alt="Gallery Image 1">
+      <img src="Figure_1.png" class="rounded-lg shadow hover:scale-105 transition" alt="Gallery Image 2">
+      <img src="Amazon.png" class="rounded-lg shadow hover:scale-105 transition" alt="Gallery Image 3">
     </div>
   </section>
 
   <!-- CV Section -->
-  <section id="cv" class="py-16 container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">📄 Curriculum Vitae</h2>
-    <p class="mb-6">Download my full CV for details on my academic background, skills, and professional experience.</p>
-    <a href="CURRICULUM VITAE- ABDULATEEF AYOOLA MOBOLAJI.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Download CV</a>
+  <section id="cv" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">📄 Curriculum Vitae</h2>
+      <p class="mb-6">Download my complete CV to learn more about my academic background, professional journey, and technical expertise.</p>
+      <a href="CURRICULUM VITAE- ABDULATEEF AYOOLA MOBOLAJI.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Download CV</a>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100">
+  <section id="contact" class="py-20">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">📬 Contact Me</h2>
-      <p class="mb-4">I’d love to connect! Feel free to reach out for collaborations, research opportunities, or data science projects.</p>
-      <p>Email: <a href="mailto:mobolajiayoola3@gmail.com" class="text-blue-600">mobolajiayoola3@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/" class="text-blue-600">LinkedIn Profile</a></p>
-      <p>GitHub: <a href="https://github.com/Iamoptimistic" class="text-blue-600">GitHub</a></p>
+      <h2 class="text-4xl font-bold mb-6">📬 Contact Me</h2>
+      <p class="mb-6">Let’s connect! Reach out for collaborations, opportunities, or just to say hi.</p>
+      <div class="space-y-2">
+        <p>Email: <a href="mailto:mobolajiayoola3@gmail.com" class="text-blue-600">mobolajiayoola3@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/" class="text-blue-600">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Iamoptimistic" class="text-blue-600">GitHub</a></p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white py-6 text-center border-t">
+  <footer class="bg-gray-800 text-white py-6 text-center">
     <p>✨ Built by <strong>Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>
   </footer>
 </body>
