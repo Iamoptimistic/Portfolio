@@ -14,9 +14,7 @@
       color: #1e293b;
     }
     section {
-      background: transparent;
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding: 4rem 0;
     }
     .card {
       background: #f8fafc;
@@ -25,18 +23,17 @@
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
     }
     a, button, img {
       transition: all 0.3s ease-in-out;
     }
     a:hover, button:hover {
       color: #2563eb;
-      text-shadow: 0 0 10px #2563eb;
     }
     img:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+      box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
     }
     header, footer {
       background: #1e3a8a;
@@ -44,7 +41,7 @@
     header a {
       color: #f1f5f9;
     }
-    header a:hover {
+    header a:hover, header a.active {
       color: #93c5fd;
     }
     footer p {
@@ -77,7 +74,6 @@
     }
     .gallery-btn:hover {
       background: #2563eb;
-      color: white;
     }
     .left-btn {
       left: 10px;
@@ -93,12 +89,12 @@
     <nav class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-xl font-bold text-white">Mobolaji Abdulateef</h1>
       <ul class="flex space-x-6 font-medium">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -212,6 +208,26 @@
         behavior: 'smooth'
       });
     }
+
+    // Active section highlighting
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
   </script>
 </body>
 </html>
