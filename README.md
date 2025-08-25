@@ -138,15 +138,15 @@
           <p>ransverse section of Cerebellum (Pelusios castaneus) (X100, H&E)</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture3.jpg" class="rounded-lg mb-2" alt="Cerebellum (X400, H&E)" onclick="openLightbox(this)">
+          <img src="Picture3.png" class="rounded-lg mb-2" alt="Cerebellum (X400, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Cerebellum (Pelusious castaneus) (X400, H&E)</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Ulcer1.jpg" class="rounded-lg mb-2" alt="Transverse section of Stomach (X40, H&E)" onclick="openLightbox(this)">
+          <img src="Ulcer1.JPG" class="rounded-lg mb-2" alt="Transverse section of Stomach (X40, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Stomach showing sloughing-off of the intestinal lining (X100, H&E) </p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Cardiac1.jpg" class="rounded-lg mb-2" alt=" longitudinal Section of Cardiac muscle, note the crossing intercalated disc, nucleus at the margin and branching of the muscle fibers (X100, H&E)" onclick="openLightbox(this)">
+          <img src="Cardiac1.JPG" class="rounded-lg mb-2" alt=" longitudinal Section of Cardiac muscle, note the crossing intercalated disc, nucleus at the margin and branching of the muscle fibers (X100, H&E)" onclick="openLightbox(this)">
           <p>longitudinal Section of Cardiac muscle, note the crossing intercalated disc, nucleus at the margin and branching of the muscle fibers (X100, H&E)</p>
         </div>
       </div>
