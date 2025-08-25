@@ -17,9 +17,9 @@
     header a { color: #f1f5f9; }
     header a:hover, header a.active { color: #93c5fd; }
     footer p { color: #e2e8f0; }
-    /* Gallery + Artwork scrollable container */
+    /* Scrollable containers */
     .scroll-wrapper { position: relative; overflow: hidden; }
-    .scroll-container { display: flex; gap: 1rem; overflow-x: auto; scroll-behavior: smooth; }
+    .scroll-container { display: flex; gap: 1rem; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 1rem; }
     .scroll-container::-webkit-scrollbar { display: none; }
     .scroll-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(30,58,138,0.8); color: white; padding: 0.5rem; border-radius: 50%; cursor: pointer; z-index: 10; }
     .scroll-btn:hover { background: #2563eb; }
@@ -34,7 +34,7 @@
 </head>
 <body class="font-sans">
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <header class="shadow-md fixed top-0 w-full z-50">
     <nav class="container mx-auto flex justify-between items-center p-4">
       <div class="flex items-center space-x-3">
@@ -47,22 +47,26 @@
         <li><a href="#research" class="nav-link">Research</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#artwork" class="nav-link">My Artwork</a></li>
-        <li><a href="#cv" class="nav-link">CV</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home" class="text-center pt-28">
     <div class="container mx-auto">
       <h2 class="text-5xl font-extrabold mb-6 text-blue-600">Welcome to My Portfolio</h2>
-      <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.</p>
-      <a href="#portfolio" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 font-semibold">Explore My Work</a>
+      <p class="text-lg max-w-2xl mx-auto mb-8">
+        I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. 
+        I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.
+      </p>
+      <a href="#portfolio" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 font-semibold">
+        Explore My Work
+      </a>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- Portfolio -->
   <section id="portfolio">
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-blue-600">📊 Portfolio Projects</h2>
@@ -72,41 +76,50 @@
       <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
         <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-        <img src="AUC.png" alt="Employee Promotion" onclick="openLightbox(this)">
+        <img src="AUC.png" alt="ROC Curve Result" onclick="openLightbox(this)">
       </div>
       <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Abalone Age Prediction</h3>
         <p class="mb-4">Predicting the age of abalones using measurable physical features and machine learning models.</p>
-        <img src="Figure_1.png" alt="Abalone Age Prediction" onclick="openLightbox(this)">
+        <img src="Figure_1.png" alt="Abalone Features" onclick="openLightbox(this)">
       </div>
     </div>
   </section>
 
-  <!-- Research Section -->
+  <!-- Research -->
   <section id="research">
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-blue-600">📑 Research Interests</h2>
-      <p class="max-w-3xl mx-auto">My research lies at the intersection of healthcare, sustainable development, and computational neuroscience. I use advanced analytics to study antimicrobial resistance, mental health, sleep patterns, and diagnostic imaging.</p>
+      <p class="max-w-3xl mx-auto">
+        My research lies at the intersection of healthcare, sustainable development, and computational neuroscience. 
+        I use advanced analytics to study antimicrobial resistance, mental health, sleep patterns, and diagnostic imaging.
+      </p>
     </div>
   </section>
 
-  <!-- Gallery Section -->
+  <!-- Gallery -->
   <section id="gallery">
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-blue-600">🖼️ Gallery</h2>
-      <p class="max-w-2xl mx-auto">Browse through visuals from my projects and research using the arrows.</p>
+      <p class="max-w-2xl mx-auto">Browse through visuals from my projects and research.</p>
     </div>
     <div class="scroll-wrapper container mx-auto">
       <button class="scroll-btn left-btn" onclick="scrollContent('galleryContainer', -300)">◀</button>
       <div id="galleryContainer" class="scroll-container">
-        <div class="text-center"><img src="AUC.png" class="rounded-lg shadow w-80" alt="Gallery Image 1" onclick="openLightbox(this)"><p>ROC Curve Result</p></div>
-        <div class="text-center"><img src="Figure_1.png" class="rounded-lg shadow w-80" alt="Gallery Image 2" onclick="openLightbox(this)"><p>Abalone Features</p></div>
+        <div class="text-center">
+          <img src="AUC.png" class="rounded-lg shadow w-80" alt="ROC Curve Result" onclick="openLightbox(this)">
+          <p>ROC Curve Result</p>
+        </div>
+        <div class="text-center">
+          <img src="Figure_1.png" class="rounded-lg shadow w-80" alt="Abalone Features" onclick="openLightbox(this)">
+          <p>Abalone Features</p>
+        </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('galleryContainer', 300)">▶</button>
     </div>
   </section>
 
-  <!-- Artwork Section -->
+  <!-- Artwork -->
   <section id="artwork">
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-blue-600">🎨 My Artwork</h2>
@@ -115,36 +128,78 @@
     <div class="scroll-wrapper container mx-auto">
       <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
       <div id="artworkContainer" class="scroll-container">
-        <div class="text-center"><img src="microscope1.jpg" class="rounded-lg shadow w-80" alt="Microscope Image 1" onclick="openLightbox(this)"><p>Neuron under microscope</p></div>
-        <div class="text-center"><img src="microscope2.jpg" class="rounded-lg shadow w-80" alt="Microscope Image 2" onclick="openLightbox(this)"><p>Cellular Structure</p></div>
+        <div class="text-center">
+          <img src="microscope1.jpg" class="rounded-lg shadow w-80" alt="Neuron under microscope" onclick="openLightbox(this)">
+          <p>Neuron under microscope</p>
+        </div>
+        <div class="text-center">
+          <img src="microscope2.jpg" class="rounded-lg shadow w-80" alt="Cellular Structure" onclick="openLightbox(this)">
+          <p>Cellular Structure</p>
+        </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('artworkContainer', 300)">▶</button>
     </div>
   </section>
 
-  <!-- CV Section -->
-  <section id="cv">
+  <!-- Contact -->
+  <section id="contact">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4 text-blue-600">📄 Curriculum Vitae</h2>
+      <h2 class="text-4xl font-bold mb-6 text-blue-600">📬 Contact Me</h2>
+      <p class="mb-6">Let’s connect! Reach out for collaborations, opportunities, or just to say hi.</p>
+      <div class="space-y-2 mb-8">
+        <p>Email: <a href="mailto:mobolajiayoola3@gmail.com">mobolajiayoola3@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Iamoptimistic">GitHub</a></p>
+      </div>
+      <h3 class="text-2xl font-bold mb-4 text-blue-600">📄 Curriculum Vitae</h3>
       <p class="mb-6">Download my complete CV to learn more about my academic background, professional journey, and technical expertise.</p>
       <a href="CURRICULUM VITAE- ABDULATEEF AYOOLA MOBOLAJI.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Download CV</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6 text-blue-600">📬 Contact Me</h2>
-      <p class="mb-6">Let’s connect! Reach out for collaborations, opportunities, or just to say hi.</p>
-      <div class="space-y-2">
-        <p>Email: <a href="mailto:mobolajiayoola3@gmail.com">mobolajiayoola3@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/Iamoptimistic">GitHub</a></p>
-      </div>\n    </div>\n  </section>\n\n  <!-- Footer -->\n  <footer class=\"py-6 text-center\">\n    <p>✨ Built by <strong class=\"text-blue-300\">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>\n  </footer>\n\n  <!-- Lightbox -->\n  <div id=\"lightbox\" onclick=\"closeLightbox()\">\n    <div class=\"text-center\">\n      <img id=\"lightbox-img\" src=\"\" alt=\"Expanded View\">\n      <p id=\"lightbox-caption\"></p>\n    </div>\n  </div>\n\n  <script>\n    function scrollContent(containerId, amount) {\n      document.getElementById(containerId).scrollBy({ left: amount, behavior: 'smooth' });\n    }\n\n    function openLightbox(img) {\n      document.getElementById('lightbox-img').src = img.src;\n      document.getElementById('lightbox-caption').innerText = img.alt;\n      document.getElementById('lightbox').classList.add('active');\n    }\n\n    function closeLightbox() {\n      document.getElementById('lightbox').classList.remove('active');\n    }\n\n    // Active nav highlight\n    const sections = document.querySelectorAll(\"section\");\n    const navLinks = document.querySelectorAll(\".nav-link\");\n\n    window.addEventListener(\"scroll\", () => {\n      let current = \"\";\n      sections.forEach(section => {\n        const sectionTop = section.offsetTop - 100;\n        if (scrollY >= sectionTop) current = section.getAttribute(\"id\");\n      });\n      navLinks.forEach(link => {\n        link.classList.remove(\"active\");\n        if (link.getAttribute(\"href\") === \"#\" + current) link.classList.add(\"active\");\n      });\n    });\n  </script>\n</body>\n</html>\n```  
+  <!-- Footer -->
+  <footer class="py-6 text-center">
+    <p>✨ Built by <strong class="text-blue-300">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>
+  </footer>
 
-✅ Now you have:  
-- **New “My Artwork” tab** (horizontal scrollable like Gallery)  
-- **Captions under each image** in Gallery + Artwork  
-- **Lightbox effect** so images open large when clicked  
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <div class="text-center">
+      <img id="lightbox-img" src="" alt="Expanded View">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
 
-Do you want me to also make the **lightbox navigable with arrows (next/prev inside the popup)**?
+  <script>
+    function scrollContent(containerId, amount) {
+      document.getElementById(containerId).scrollBy({ left: amount, behavior: 'smooth' });
+    }
+
+    function openLightbox(img) {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-caption').innerText = img.alt;
+      document.getElementById('lightbox').classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    // Highlight active nav link
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) current = section.getAttribute("id");
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) link.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
