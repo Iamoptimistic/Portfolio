@@ -103,7 +103,7 @@
   <section id="home" class="text-center pt-28">
     <div class="container mx-auto">
       <h2 class="text-5xl font-extrabold mb-6 text-blue-600">Welcome to My Portfolio</h2>
-      <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.</p>
+      <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast with a strong interest in solving real-world problems in health care through data, sustainable development, and advanced analytics. I aim to leverage data science to drive innovation and make informed decisions in health care.</p>
       <a href="#portfolio" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 font-semibold">Explore My Work</a>
     </div>
   </section>
