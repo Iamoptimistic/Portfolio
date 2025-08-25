@@ -6,89 +6,39 @@
   <title>Mobolaji Abdulateef | Data Science Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      background: #ffffff;
-      color: #1e293b;
-    }
-    section {
-      padding: 4rem 0;
-    }
-    .card {
-      background: #f8fafc;
-      color: #1e293b;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
-    }
-    a, button, img {
-      transition: all 0.3s ease-in-out;
-    }
-    a:hover, button:hover {
-      color: #2563eb;
-    }
-    img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
-    }
-    header, footer {
-      background: #1e3a8a;
-    }
-    header a {
-      color: #f1f5f9;
-    }
-    header a:hover, header a.active {
-      color: #93c5fd;
-    }
-    footer p {
-      color: #e2e8f0;
-    }
-    /* Gallery */
-    .gallery-wrapper {
-      position: relative;
-      overflow: hidden;
-    }
-    .gallery-container {
-      display: flex;
-      gap: 1rem;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-    }
-    .gallery-container::-webkit-scrollbar {
-      display: none;
-    }
-    .gallery-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(30, 58, 138, 0.8);
-      color: white;
-      padding: 0.5rem;
-      border-radius: 50%;
-      cursor: pointer;
-      z-index: 10;
-    }
-    .gallery-btn:hover {
-      background: #2563eb;
-    }
-    .left-btn {
-      left: 10px;
-    }
-    .right-btn {
-      right: 10px;
-    }
+    html { scroll-behavior: smooth; }
+    body { background: #ffffff; color: #1e293b; }
+    section { padding: 4rem 0; }
+    .card { background: #f8fafc; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(37,99,235,0.5); }
+    a, button, img { transition: all 0.3s ease-in-out; }
+    a:hover, button:hover { color: #2563eb; }
+    header, footer { background: #1e3a8a; }
+    header a { color: #f1f5f9; }
+    header a:hover, header a.active { color: #93c5fd; }
+    footer p { color: #e2e8f0; }
+    /* Gallery + Artwork scrollable container */
+    .scroll-wrapper { position: relative; overflow: hidden; }
+    .scroll-container { display: flex; gap: 1rem; overflow-x: auto; scroll-behavior: smooth; }
+    .scroll-container::-webkit-scrollbar { display: none; }
+    .scroll-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(30,58,138,0.8); color: white; padding: 0.5rem; border-radius: 50%; cursor: pointer; z-index: 10; }
+    .scroll-btn:hover { background: #2563eb; }
+    .left-btn { left: 10px; }
+    .right-btn { right: 10px; }
+    /* Lightbox */
+    #lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: opacity 0.3s ease; z-index: 100; }
+    #lightbox.active { visibility: visible; opacity: 1; }
+    #lightbox img { max-width: 90%; max-height: 80%; border-radius: 10px; }
+    #lightbox p { color: white; margin-top: 1rem; font-size: 1rem; text-align: center; }
   </style>
 </head>
 <body class="font-sans">
+
   <!-- Navigation Bar -->
   <header class="shadow-md fixed top-0 w-full z-50">
     <nav class="container mx-auto flex justify-between items-center p-4">
       <div class="flex items-center space-x-3">
-        <img src="profile.jpg" alt="Profile Picture" class="w-10 h-10 rounded-full border-2 border-white">
+        <img src="Profile.png" alt="Profile Picture" class="w-10 h-10 rounded-full border-2 border-white">
         <h1 class="text-xl font-bold text-white">Mobolaji Abdulateef</h1>
       </div>
       <ul class="flex space-x-6 font-medium">
@@ -96,6 +46,7 @@
         <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
         <li><a href="#research" class="nav-link">Research</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#artwork" class="nav-link">My Artwork</a></li>
         <li><a href="#cv" class="nav-link">CV</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -121,22 +72,12 @@
       <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
         <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-        <img src="AUC.png" alt="Project">
+        <img src="AUC.png" alt="Employee Promotion" onclick="openLightbox(this)">
       </div>
       <div class="card shadow rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-2">Abalone Age Prediction</h3>
         <p class="mb-4">Predicting the age of abalones using measurable physical features and machine learning models.</p>
-        <img src="Figure_1.png" alt="Project">
-      </div>
-      <div class="card shadow rounded-xl p-6">
-        <h3 class="text-xl font-semibold mb-2">Data Cleaning Task with Python</h3>
-        <p class="mb-4">Prepared and cleaned a Kaggle movies dataset, resolving missing values, duplicates, and inconsistencies.</p>
-        <img src="Print.png" alt="Project">
-      </div>
-      <div class="card shadow rounded-xl p-6">
-        <h3 class="text-xl font-semibold mb-2">Amazon Social Media Marketing</h3>
-        <p class="mb-4">Power BI visualization of Amazon’s marketing influence in Nigeria, analyzing customer engagement trends.</p>
-        <img src="Amazon.png" alt="Project">
+        <img src="Figure_1.png" alt="Abalone Age Prediction" onclick="openLightbox(this)">
       </div>
     </div>
   </section>
@@ -147,16 +88,6 @@
       <h2 class="text-4xl font-bold mb-4 text-blue-600">📑 Research Interests</h2>
       <p class="max-w-3xl mx-auto">My research lies at the intersection of healthcare, sustainable development, and computational neuroscience. I use advanced analytics to study antimicrobial resistance, mental health, sleep patterns, and diagnostic imaging.</p>
     </div>
-    <div class="grid md:grid-cols-2 gap-8 container mx-auto">
-      <div class="card p-6 shadow rounded-xl">
-        <h3 class="text-xl font-semibold mb-2">Biomedical Research</h3>
-        <p>Applying machine learning to healthcare datasets for better decision-making, diagnostics, and patient outcomes.</p>
-      </div>
-      <div class="card p-6 shadow rounded-xl">
-        <h3 class="text-xl font-semibold mb-2">Sustainable Development</h3>
-        <p>Exploring data-driven policies for antimicrobial resistance, public health, and sustainable healthcare systems.</p>
-      </div>
-    </div>
   </section>
 
   <!-- Gallery Section -->
@@ -165,15 +96,29 @@
       <h2 class="text-4xl font-bold mb-4 text-blue-600">🖼️ Gallery</h2>
       <p class="max-w-2xl mx-auto">Browse through visuals from my projects and research using the arrows.</p>
     </div>
-    <div class="gallery-wrapper container mx-auto">
-      <button class="gallery-btn left-btn" onclick="scrollGallery(-300)">◀</button>
-      <div id="galleryContainer" class="gallery-container">
-        <img src="AUC.png" class="rounded-lg shadow w-80" alt="Gallery Image 1">
-        <img src="Figure_1.png" class="rounded-lg shadow w-80" alt="Gallery Image 2">
-        <img src="Amazon.png" class="rounded-lg shadow w-80" alt="Gallery Image 3">
-        <img src="Print.png" class="rounded-lg shadow w-80" alt="Gallery Image 4">
+    <div class="scroll-wrapper container mx-auto">
+      <button class="scroll-btn left-btn" onclick="scrollContent('galleryContainer', -300)">◀</button>
+      <div id="galleryContainer" class="scroll-container">
+        <div class="text-center"><img src="AUC.png" class="rounded-lg shadow w-80" alt="Gallery Image 1" onclick="openLightbox(this)"><p>ROC Curve Result</p></div>
+        <div class="text-center"><img src="Figure_1.png" class="rounded-lg shadow w-80" alt="Gallery Image 2" onclick="openLightbox(this)"><p>Abalone Features</p></div>
       </div>
-      <button class="gallery-btn right-btn" onclick="scrollGallery(300)">▶</button>
+      <button class="scroll-btn right-btn" onclick="scrollContent('galleryContainer', 300)">▶</button>
+    </div>
+  </section>
+
+  <!-- Artwork Section -->
+  <section id="artwork">
+    <div class="container mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4 text-blue-600">🎨 My Artwork</h2>
+      <p class="max-w-2xl mx-auto">Microscope images and scientific visuals from my biomedical research.</p>
+    </div>
+    <div class="scroll-wrapper container mx-auto">
+      <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
+      <div id="artworkContainer" class="scroll-container">
+        <div class="text-center"><img src="microscope1.jpg" class="rounded-lg shadow w-80" alt="Microscope Image 1" onclick="openLightbox(this)"><p>Neuron under microscope</p></div>
+        <div class="text-center"><img src="microscope2.jpg" class="rounded-lg shadow w-80" alt="Microscope Image 2" onclick="openLightbox(this)"><p>Cellular Structure</p></div>
+      </div>
+      <button class="scroll-btn right-btn" onclick="scrollContent('artworkContainer', 300)">▶</button>
     </div>
   </section>
 
@@ -195,42 +140,11 @@
         <p>Email: <a href="mailto:mobolajiayoola3@gmail.com">mobolajiayoola3@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mobolajiabdulateef/">LinkedIn Profile</a></p>
         <p>GitHub: <a href="https://github.com/Iamoptimistic">GitHub</a></p>
-      </div>
-    </div>
-  </section>
+      </div>\n    </div>\n  </section>\n\n  <!-- Footer -->\n  <footer class=\"py-6 text-center\">\n    <p>✨ Built by <strong class=\"text-blue-300\">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>\n  </footer>\n\n  <!-- Lightbox -->\n  <div id=\"lightbox\" onclick=\"closeLightbox()\">\n    <div class=\"text-center\">\n      <img id=\"lightbox-img\" src=\"\" alt=\"Expanded View\">\n      <p id=\"lightbox-caption\"></p>\n    </div>\n  </div>\n\n  <script>\n    function scrollContent(containerId, amount) {\n      document.getElementById(containerId).scrollBy({ left: amount, behavior: 'smooth' });\n    }\n\n    function openLightbox(img) {\n      document.getElementById('lightbox-img').src = img.src;\n      document.getElementById('lightbox-caption').innerText = img.alt;\n      document.getElementById('lightbox').classList.add('active');\n    }\n\n    function closeLightbox() {\n      document.getElementById('lightbox').classList.remove('active');\n    }\n\n    // Active nav highlight\n    const sections = document.querySelectorAll(\"section\");\n    const navLinks = document.querySelectorAll(\".nav-link\");\n\n    window.addEventListener(\"scroll\", () => {\n      let current = \"\";\n      sections.forEach(section => {\n        const sectionTop = section.offsetTop - 100;\n        if (scrollY >= sectionTop) current = section.getAttribute(\"id\");\n      });\n      navLinks.forEach(link => {\n        link.classList.remove(\"active\");\n        if (link.getAttribute(\"href\") === \"#\" + current) link.classList.add(\"active\");\n      });\n    });\n  </script>\n</body>\n</html>\n```  
 
-  <!-- Footer -->
-  <footer class="py-6 text-center">
-    <p>✨ Built by <strong class="text-blue-300">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>
-  </footer>
+✅ Now you have:  
+- **New “My Artwork” tab** (horizontal scrollable like Gallery)  
+- **Captions under each image** in Gallery + Artwork  
+- **Lightbox effect** so images open large when clicked  
 
-  <script>
-    function scrollGallery(amount) {
-      document.getElementById('galleryContainer').scrollBy({
-        left: amount,
-        behavior: 'smooth'
-      });
-    }
-
-    // Active section highlighting
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        if (scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+Do you want me to also make the **lightbox navigable with arrows (next/prev inside the popup)**?
