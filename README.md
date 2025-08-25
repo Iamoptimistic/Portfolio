@@ -10,34 +10,45 @@
       scroll-behavior: smooth;
     }
     body {
-      background: linear-gradient(to right, #000000, #3B5B2A);
-      color: #e5e7eb;
+      background: #ffffff;
+      color: #1e293b;
     }
     section {
       background: transparent;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
     .card {
-      background: rgba(59, 91, 42, 0.8);
-      color: #f9fafb;
+      background: #f8fafc;
+      color: #1e293b;
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(0, 255, 100, 0.6);
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
     }
     a, button, img {
       transition: all 0.3s ease-in-out;
     }
     a:hover, button:hover {
-      color: #22c55e;
-      text-shadow: 0 0 10px #22c55e;
+      color: #2563eb;
+      text-shadow: 0 0 10px #2563eb;
     }
     img:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(0, 255, 100, 0.6);
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
     }
     header, footer {
-      background: #000000;
+      background: #1e3a8a;
+    }
+    header a {
+      color: #f1f5f9;
+    }
+    header a:hover {
+      color: #93c5fd;
+    }
+    footer p {
+      color: #e2e8f0;
     }
     /* Gallery */
     .gallery-wrapper {
@@ -57,15 +68,15 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.6);
-      color: #22c55e;
+      background: rgba(30, 58, 138, 0.8);
+      color: white;
       padding: 0.5rem;
       border-radius: 50%;
       cursor: pointer;
       z-index: 10;
     }
     .gallery-btn:hover {
-      background: rgba(34, 197, 94, 0.8);
+      background: #2563eb;
       color: white;
     }
     .left-btn {
@@ -79,8 +90,8 @@
 <body class="font-sans">
   <!-- Navigation Bar -->
   <header class="shadow-md fixed top-0 w-full z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4 text-gray-200">
-      <h1 class="text-xl font-bold text-green-400">Mobolaji Abdulateef</h1>
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-white">Mobolaji Abdulateef</h1>
       <ul class="flex space-x-6 font-medium">
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -93,18 +104,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="pt-32 pb-20 text-center">
+  <section id="home" class="text-center pt-28">
     <div class="container mx-auto">
-      <h2 class="text-5xl font-extrabold mb-6 text-green-400">Welcome to My Portfolio</h2>
+      <h2 class="text-5xl font-extrabold mb-6 text-blue-600">Welcome to My Portfolio</h2>
       <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.</p>
-      <a href="#portfolio" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 font-semibold">Explore My Work</a>
+      <a href="#portfolio" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 font-semibold">Explore My Work</a>
     </div>
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="py-20">
+  <section id="portfolio">
     <div class="container mx-auto text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4 text-green-400">📊 Portfolio Projects</h2>
+      <h2 class="text-4xl font-bold mb-4 text-blue-600">📊 Portfolio Projects</h2>
       <p class="max-w-2xl mx-auto">A selection of my work demonstrating expertise in machine learning, predictive analytics, and data visualization.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-8 container mx-auto">
@@ -132,9 +143,9 @@
   </section>
 
   <!-- Research Section -->
-  <section id="research" class="py-20">
+  <section id="research">
     <div class="container mx-auto text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4 text-green-400">📑 Research Interests</h2>
+      <h2 class="text-4xl font-bold mb-4 text-blue-600">📑 Research Interests</h2>
       <p class="max-w-3xl mx-auto">My research lies at the intersection of healthcare, sustainable development, and computational neuroscience. I use advanced analytics to study antimicrobial resistance, mental health, sleep patterns, and diagnostic imaging.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-8 container mx-auto">
@@ -150,9 +161,9 @@
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="py-20">
+  <section id="gallery">
     <div class="container mx-auto text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4 text-green-400">🖼️ Gallery</h2>
+      <h2 class="text-4xl font-bold mb-4 text-blue-600">🖼️ Gallery</h2>
       <p class="max-w-2xl mx-auto">Browse through visuals from my projects and research using the arrows.</p>
     </div>
     <div class="gallery-wrapper container mx-auto">
@@ -168,18 +179,18 @@
   </section>
 
   <!-- CV Section -->
-  <section id="cv" class="py-20">
+  <section id="cv">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4 text-green-400">📄 Curriculum Vitae</h2>
+      <h2 class="text-4xl font-bold mb-4 text-blue-600">📄 Curriculum Vitae</h2>
       <p class="mb-6">Download my complete CV to learn more about my academic background, professional journey, and technical expertise.</p>
-      <a href="CURRICULUM VITAE- ABDULATEEF AYOOLA MOBOLAJI.pdf" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">Download CV</a>
+      <a href="CURRICULUM VITAE- ABDULATEEF AYOOLA MOBOLAJI.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Download CV</a>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20">
+  <section id="contact">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6 text-green-400">📬 Contact Me</h2>
+      <h2 class="text-4xl font-bold mb-6 text-blue-600">📬 Contact Me</h2>
       <p class="mb-6">Let’s connect! Reach out for collaborations, opportunities, or just to say hi.</p>
       <div class="space-y-2">
         <p>Email: <a href="mailto:mobolajiayoola3@gmail.com">mobolajiayoola3@gmail.com</a></p>
@@ -190,8 +201,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-gray-400">
-    <p>✨ Built by <strong class="text-green-400">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>
+  <footer class="py-6 text-center">
+    <p>✨ Built by <strong class="text-blue-300">Mobolaji Abdulateef</strong> | Data Science & Biomedical Research ✨</p>
   </footer>
 
   <script>
