@@ -38,7 +38,7 @@
   <header class="shadow-md fixed top-0 w-full z-50">
     <nav class="container mx-auto flex justify-between items-center p-4">
       <div class="flex items-center space-x-3">
-        <img src="Profile.png" alt="Profile Picture" class="w-10 h-10 rounded-full border-2 border-white">
+        <img src="Profile.jpg" alt="Profile Picture" class="w-10 h-10 rounded-full border-2 border-white">
         <h1 class="text-xl font-bold text-white">Mobolaji Abdulateef</h1>
       </div>
       <ul class="flex space-x-6 font-medium">
