@@ -87,7 +87,10 @@
   <!-- Navigation Bar -->
   <header class="shadow-md fixed top-0 w-full z-50">
     <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-white">Mobolaji Abdulateef</h1>
+      <div class="flex items-center space-x-3">
+        <img src="profile.jpg" alt="Profile Picture" class="w-10 h-10 rounded-full border-2 border-white">
+        <h1 class="text-xl font-bold text-white">Mobolaji Abdulateef</h1>
+      </div>
       <ul class="flex space-x-6 font-medium">
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -103,7 +106,7 @@
   <section id="home" class="text-center pt-28">
     <div class="container mx-auto">
       <h2 class="text-5xl font-extrabold mb-6 text-blue-600">Welcome to My Portfolio</h2>
-      <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast with a strong interest in solving real-world problems in health care through data, sustainable development, and advanced analytics. I aim to leverage data science to drive innovation and make informed decisions in health care.</p>
+      <p class="text-lg max-w-2xl mx-auto mb-8">I am <strong>Mobolaji Abdulateef</strong>, a Data Scientist and Biomedical Research Enthusiast. I specialize in <strong>Data Analysis, Visualization, and Predictive Modelling</strong> using Python and Power BI.</p>
       <a href="#portfolio" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 font-semibold">Explore My Work</a>
     </div>
   </section>
