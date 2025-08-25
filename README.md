@@ -91,8 +91,8 @@
     <div class="container mx-auto text-center mb-12">
       <h2 class="text-4xl font-bold mb-4 text-blue-600">📑 Research Interests</h2>
       <p class="max-w-3xl mx-auto">
-        My research lies at the intersection of healthcare, sustainable development, and computational neuroscience. 
-        I use advanced analytics to study antimicrobial resistance, mental health, sleep patterns, and diagnostic imaging.
+        My research lies at the intersection of Neurobiology and Bioimaging. 
+        I use advanced analytics to study brain health, sleep patterns, and Bioimaging.
       </p>
     </div>
   </section>
@@ -107,12 +107,20 @@
       <button class="scroll-btn left-btn" onclick="scrollContent('galleryContainer', -300)">◀</button>
       <div id="galleryContainer" class="scroll-container">
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="AUC.png" class="rounded-lg mb-2" alt="ROC Curve Result" onclick="openLightbox(this)">
-          <p>ROC Curve Result</p>
+          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="ROC Curve Result" onclick="openLightbox(this)">
+          <p>SAVAN Conference Day 1</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Figure_1.png" class="rounded-lg mb-2" alt="Abalone Features" onclick="openLightbox(this)">
-          <p>Abalone Features</p>
+          <img src="Savan2.jpg" class="rounded-lg mb-2" alt="Abalone Features" onclick="openLightbox(this)">
+          <p> SAVAN Conference Day 2</p>
+        </div>
+        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
+          <img src="Savan3.jpg" class="rounded-lg mb-2" alt="ROC Curve Result" onclick="openLightbox(this)">
+          <p>SAVAN Conference Day 3 with BlueBlood Veterinary Clinic Staff</p>
+        </div>
+        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
+          <img src="Alumni1.jpg" class="rounded-lg mb-2" alt="ROC Curve Result" onclick="openLightbox(this)">
+          <p>Delivering my Research to Alumni at the Alumni meeting 2025</p>
         </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('galleryContainer', 300)">▶</button>
@@ -140,6 +148,9 @@
           <img src="Picture3.png" class="rounded-lg mb-2" alt="Cellular Structure" onclick="openLightbox(this)">
           <p>Cellular Structure of Turtle Cerebellum</p>
         </div>
+        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
+          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Cerebellar layer Turtle" onclick="openLightbox(this)">
+          <p>Cerebellar Layer (X100, H&E)</p>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('artworkContainer', 300)">▶</button>
     </div>
