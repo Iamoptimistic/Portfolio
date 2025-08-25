@@ -114,6 +114,12 @@
           <img src="Figure_1.png" class="rounded-lg shadow w-80" alt="Abalone Features" onclick="openLightbox(this)">
           <p>Abalone Features</p>
         </div>
+        <div id="galleryContainer" class="scroll-container">
+        <div class="text-center">
+          <img src="AUC.png" class="rounded-lg shadow w-80" alt="ROC Curve Result" onclick="openLightbox(this)">
+          <p>ROC Curve Result</p>
+        </div>
+        </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('galleryContainer', 300)">▶</button>
     </div>
@@ -129,13 +135,16 @@
       <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
       <div id="artworkContainer" class="scroll-container">
         <div class="text-center">
-          <img src="microscope1.jpg" class="rounded-lg shadow w-80" alt="Neuron under microscope" onclick="openLightbox(this)">
-          <p>Neuron under microscope</p>
+          <img src="Picture1.jpg" class="rounded-lg shadow w-80" alt="Neuron under microscope" onclick="openLightbox(this)">
+          <p> Transverse section of Cerebellum of African Side-neck Turtle (X40, H&E)</p>
         </div>
         <div class="text-center">
-          <img src="microscope2.jpg" class="rounded-lg shadow w-80" alt="Cellular Structure" onclick="openLightbox(this)">
-          <p>Cellular Structure</p>
+          <img src="Picture2.jpg" class="rounded-lg shadow w-80" alt="Cellular Structure" onclick="openLightbox(this)">
+          <p>Cerebellar layer of African Side-neck Turtle (X100, H&E)</p>
         </div>
+      <div class="text-center">
+          <img src="picture3.png" class="rounded-lg shadow w-80" alt="Cellular Structure" onclick="openLightbox(this)">
+          <p>Cellular Structure of the African Side-neck turtle cerebellum</p>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('artworkContainer', 300)">▶</button>
     </div>
