@@ -85,21 +85,7 @@
           <p class="mb-4">Predicting the age of abalones using measurable physical features and machine learning models.</p>
           <img src="Figure_1.png" class="rounded-lg mb-2" alt="Abalone Age Prediction" onclick="openLightbox(this)">
         </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
-          <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-          <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
-          <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-          <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
-          <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-          <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
-        </div>
+        <!-- add more cards here if needed -->
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('portfolioContainer', 300)">▶</button>
     </div>
@@ -134,32 +120,12 @@
           <p>SAVAN Conference Day 2</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
+          <img src="Savan2.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 2" onclick="openLightbox(this)">
+          <p>SAVAN Conference Day 2</p>
         </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
-        </div>
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Savan1.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 1" onclick="openLightbox(this)">
-          <p>SAVAN Conference Day 1</p>
+          <img src="Savan2.jpg" class="rounded-lg mb-2" alt="SAVAN Conference Day 2" onclick="openLightbox(this)">
+          <p>SAVAN Conference Day 2</p>
         </div>
       </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('galleryContainer', 300)">▶</button>
@@ -178,29 +144,21 @@
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
           <img src="Picture1.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Cerebellum (X40, H&E)</p>
-        <div class="scroll-wrapper container mx-auto">
-      <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
-      <div id="artworkContainer" class="scroll-container">
+        </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
           <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Cerebellum (X40, H&E)</p>
-        <div class="scroll-wrapper container mx-auto">
-      <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
-      <div id="artworkContainer" class="scroll-container">
+        </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
           <img src="Picture3.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Cerebellum (X40, H&E)</p>
-        <div class="scroll-wrapper container mx-auto">
-      <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
-      <div id="artworkContainer" class="scroll-container">
+        </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture1.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
+          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Cerebellum (X40, H&E)</p>
-        <div class="scroll-wrapper container mx-auto">
-      <button class="scroll-btn left-btn" onclick="scrollContent('artworkContainer', -300)">◀</button>
-      <div id="artworkContainer" class="scroll-container">
+        </div>
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <img src="Picture1.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
+          <img src="Picture2.jpg" class="rounded-lg mb-2" alt="Transverse section of Cerebellum (X40, H&E)" onclick="openLightbox(this)">
           <p>Transverse section of Cerebellum (X40, H&E)</p>
         </div>
       </div>
