@@ -80,24 +80,16 @@
           <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
           <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
         </div>
+        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
+          <h3 class="text-xl font-semibold mb-2">Abalone Age Prediction</h3>
+          <p class="mb-4">Predicting the age of abalones using measurable physical features and machine learning models.</p>
+          <img src="Figure_1.png" class="rounded-lg mb-2" alt="Abalone Age Prediction" onclick="openLightbox(this)">
+        </div>
       </div>
-      <div id="portfolioContainer" class="scroll-container">
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
-          <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-          <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
-        </div>
-        </div>
-      <div id="portfolioContainer" class="scroll-container">
-        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
-          <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
-          <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
-          <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
-        </div>
       <button class="scroll-btn right-btn" onclick="scrollContent('portfolioContainer', 300)">▶</button>
     </div>
   </section>
-      
+
   <!-- Research -->
   <section id="research">
     <div class="container mx-auto text-center mb-12">
