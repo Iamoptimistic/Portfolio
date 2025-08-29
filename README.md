@@ -75,6 +75,15 @@
       <button class="scroll-btn left-btn" onclick="scrollContent('portfolioContainer', -300)">◀</button>
       <div id="portfolioContainer" class="scroll-container">
         <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
+          <h3 class="text-xl font-semibold mb-2">Pediatric Pulmonary ChatBot</h3>
+          <p class="mb-4">The Pulmonary Chatbot is an AI-powered conversational tool designed to assist in understanding pediatric and adult pulmonary diseases. It provides structured, medically-informed Q&A interactions on symptoms, diagnosis, prevention, and treatment. Built for research and training, it enhances learning, clinical communication, and decision-support in respiratory health management.</p>
+          <img src="PulmoBot.png" class="rounded-lg mb-2" alt="PulmoBot" onclick="openLightbox(this)">
+            <a href="https://paediatricpulmonarybot.streamlit.app/" target=" " 
+     class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+     🔗 View Project
+            </a>
+        </div>
+        <div class="card shadow rounded-xl p-4 text-center w-80 flex-shrink-0">
           <h3 class="text-xl font-semibold mb-2">Employee Promotion Prediction</h3>
           <p class="mb-4">ML system to predict employee promotions using HR metrics, enhancing transparency and fairness.</p>
           <img src="AUC.png" class="rounded-lg mb-2" alt="Employee Promotion Prediction" onclick="openLightbox(this)">
